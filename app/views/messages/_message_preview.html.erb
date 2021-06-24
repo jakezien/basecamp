@@ -1,0 +1,26 @@
+<article class="message-preview">
+
+  <div class="message-preview__avatar avatar">
+    <input type="checkbox"/>
+  </div>
+
+  <a class="message-preview__link" href="<%= topic_path(topic) %>">
+    <div class="message-preview__content">
+      <h3 class="message-preview__subject flush">
+          <%= topic.messages.last.subject %>
+      </h3>
+      <p class="message-preview__summary flush">
+        <span class="message-preview__sender">
+          <%= topic.messages.last.sender %>
+        </span>
+        —
+        <span class="message-preview__body">
+          <%= topic.messages.last.body %>
+        </span>
+      </p>
+    </div>
+    <time class="message-preview__time">
+      <%= topic.messages.last.time_received.strftime("%l:%M%P") %>
+    </time>
+  </a>
+</article>

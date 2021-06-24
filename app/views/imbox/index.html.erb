@@ -1,0 +1,10 @@
+
+<div class="sheet">
+  <header>
+    <h1>Imbox</h1>
+  </header>
+
+  <div class="imbox">
+    <%= render partial: 'messages/message_preview', collection: @topics,  as: 'topic' %>
+  </div>
+</div>

@@ -1,3 +1,36 @@
-// Place all the styles related to the Messages controller here.
-// They will automatically be included in application.css.
-// You can use Sass (SCSS) here: https://sass-lang.com/
+.message-preview {
+	display: grid;
+	grid-template-columns: calc(2.25em + 1rem) calc(100% - 2.25em - 2rem);
+	overflow: hidden;
+	text-overflow: ellipsis;
+	margin: 1em 0;
+	width: 100%;
+
+	&__avatar {
+		flex: 0 0 auto
+	}
+
+	&__link {
+		display: flex;
+		width: 100%;
+		text-decoration: none;
+	}
+
+	&__content {
+		width: 100%;
+		overflow: hidden;
+		text-overflow: ellipsis;
+	}
+
+	&__summary {
+		max-width: 90%;
+		overflow: hidden;
+		text-overflow: ellipsis;
+		white-space: nowrap;
+	}
+
+	&__time {
+		text-align: right;
+		align-self: flex-end;
+	}
+}

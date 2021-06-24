@@ -1,0 +1,35 @@
+.navbar {
+	position: sticky;
+	top: 0;
+	left: 0;
+	right: 0;
+	z-index: 9;
+	margin-bottom: 1rem;
+	display: flex;
+	align-items: center;	
+	justify-content: center;
+
+	&__content {
+		display: flex;
+		align-items: center;	
+		justify-content: space-between;
+		width: 100%;
+		margin: 0.5rem 0;
+		max-width: calc(var(--content-width) + var(--base-space) * 12);
+	}
+
+	&__left, &__right {
+		display: flex;
+		align-items: center;
+		height: 100%;
+	}
+
+	&__right-label {
+		margin-right: var(--half-space)
+	}
+
+	&__avatar {
+		width: 3.5rem;
+		height: 3.5rem;
+	}
+}
