@@ -1,0 +1,34 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Sender:</strong>
+  <%= @message.sender %>
+</p>
+
+<p>
+  <strong>Subject:</strong>
+  <%= @message.subject %>
+</p>
+
+<p>
+  <strong>Body:</strong>
+  <%= @message.body %>
+</p>
+
+<p>
+  <strong>Time received:</strong>
+  <%= @message.time_received %>
+</p>
+
+<p>
+  <strong>Is note to self:</strong>
+  <%= @message.is_note_to_self %>
+</p>
+
+<p>
+  <strong>Belongs to:</strong>
+  <%= @message.belongs_to %>
+</p>
+
+<%= link_to 'Edit', edit_message_path(@message) %> |
+<%= link_to 'Back', messages_path %>

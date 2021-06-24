@@ -1,0 +1,54 @@
+labels: ['Travel', 'Shop', 'Filing Cabinet', 'Gifts', 'Investing', 'Japan', 'Medical', 'Tax', 'Project', 'Dog']
+
+topics:
+  - &topic0
+    - &message0
+      sender: Jake Zien
+      subject: Dinner?
+      body: You guys wanna grab dinner now that things are reopening?
+      time_received: 'Jun 2 2021 17:00'
+    - &message1 
+      sender: Annick Thomas
+      subject: 'Re: Dinner'
+      body: We're free Saturday? I've been dying to go to Estela…
+      time_received: 'Jun 2 2021 17:28'
+    - &message2 
+      sender: Jake Zien
+      subject: 'Re: Dinner'
+      body: 'Sold. You''re in the calendar :)'
+      time_received: 'Jun 2 2021 18:48'
+
+  - &topic1
+    - &message0
+      sender: Laura Moreno
+      subject: Inspection Contingency
+      body: The seller still hasn't signed his cancellation of contract, so let's be patient a little longer. I'm not sure what his deal is, to be honest with you; this isn't the way things usually go.
+      time_received: 'Jun 6 2021 11:07'
+    - &message1
+      sender: Jake Zien
+      subject: 'Re: Inspection Contingency'
+      body: OK, sounds good. Is there anything we can do to help or push this along?
+      time_received: 'Jun 6 2021 11:31'
+    - &message2
+      sender: Laura Moreno
+      subject: 'Re: Inspection Contingency'
+      body: Unfortunately, not much. I've got your back though; I've been in touch with his agents every day to try to get this closed up.
+      time_received: 'Jun 6 2021 11:33'
+    - &message3
+      sender: Jake Zien
+      subject: 'Re: Inspection Contingency'
+      body: Alright. Thanks for staying on top of it! — Jake & Anna
+      time_received: 'Jun 6 2021 11:34'
+      
+  - &topic2
+    - &message0
+      sender: Elizabeth Grier
+      subject: IFAM Volunteer T-Shirts and Reminder
+      body: >-
+          Greetings IFAM Volunteer Family, Thank you so much for registering to
+          volunteer for the 2021 Market.  We already have many volunteer teams
+          meeting up and taking action including the Booth Supplies Team, the
+          Ambiance Team, Volunteer Coordination and Check-in, Market Signs, and
+          many more.
+      time_received: 'Jun 17 2021 16:32'
+

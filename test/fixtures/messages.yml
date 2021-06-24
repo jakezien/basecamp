@@ -1,0 +1,17 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  sender: MyString
+  subject: MyString
+  body: MyText
+  time_received: 2021-06-23 22:45:07
+  is_note_to_self: false
+  belongs_to: 
+
+two:
+  sender: MyString
+  subject: MyString
+  body: MyText
+  time_received: 2021-06-23 22:45:07
+  is_note_to_self: false
+  belongs_to: 
