@@ -19,6 +19,16 @@ class TopicsController < ApplicationController
   def edit
   end
 
+  def bulk_update
+    ids = params[:topic_ids].split(',')
+    ids.each do |id|
+      @topic = Topic.find(id)
+      @topic.status = params[:status]
+      @topic.save
+    end
+    redirect_to request.referer
+  end
+
   # POST /topics or /topics.json
   def create
     @topic = Topic.new(topic_params)

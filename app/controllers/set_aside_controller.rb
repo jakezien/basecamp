@@ -1,7 +1,11 @@
 class SetAsideController < ApplicationController
 
 	def index
-		@topics = Topic.all
+		@topics = Topic.all.filter {
+			|topic| topic.set_aside?
+		}.sort{
+			|a, b| b.messages.last[:time_received] <=> a.messages.last[:time_received]
+		}
 	end
 
 end

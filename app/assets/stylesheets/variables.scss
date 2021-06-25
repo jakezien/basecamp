@@ -36,9 +36,27 @@
 	--rgb-light-gray: 251, 250, 249;
 	--rgb-neutral-light-gray: 244, 243, 245;
 
+	--rgb-teal: 157, 255, 236;
+	--rgb-blue: 0, 116, 228;
+	--rgb-purple: 85, 34, 250;
+
 	--color-text:  rgb(var(--rgb-almost-black));
 	--color-text--subtle: rgba(var(--rgb-almost-black), 0.66);
+	--color-text--reversed:  rgb(var(--rgb-white));
+	--color-text--subtle-reversed: rgba(var(--rgb-white), 0.66);
+
 	--color-bg--main:  rgb(var(--rgb-white));
 	--color-bg--sheet: var(--color-bg-main);
 	--color-shadow: rgba(var(--rgb-medium-gray), 0.5);
+
+	--color-primary: rgb(var(--rgb-teal));
+	--color-secondary: rgb(var(--rgb-blue));
+	--color-tertiary: rgb(var(--rgb-purple));
+}
+
+
+@media (min-width: 40em) {
+  :root {
+    --font-size-base: 11px
+  }
 }

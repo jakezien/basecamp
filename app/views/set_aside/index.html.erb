@@ -4,10 +4,15 @@
     <p>Everything you’ve marked as Set Aside.</p>
   </header>
 
-  <div class="set-aside">
+  <div class="set-aside"
+    data-controller="bulk-actions" 
+    data-bulk-actions-selected-class="bulk-selection--active"
+  >
     <%= render partial: 'messages/message_preview', 
-      collection: @topics.sort {|a, b| b.messages.last[:time_received] <=> a.messages.last[:time_received]},  
+      collection: @topics,  
       as: 'topic' %>
+
+    <%= render partial: 'partials/bulk_actions_menu' %>
   </div>
 
 

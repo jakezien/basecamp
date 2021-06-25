@@ -8,10 +8,11 @@
     data-bulk-actions-selected-class="bulk-selection--active"
   >
     <%= render partial: 'messages/message_preview', collection: @topics, as: 'topic'%>
+
+    <%= render partial: 'partials/bulk_actions_menu' %>
   </div>
 
   <footer class="imbox__footer">
-
-    
+    <%= link_to "Set Aside", "/set_aside" %>
   </footer>
 </div>

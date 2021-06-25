@@ -1,0 +1,9 @@
+<%= form_with(
+	url: '/topics/bulk_update?status=' + status, 
+	method: "patch", 
+	data: {action: 'bulk_actions#reset'},
+	class:"bulk-actions__item") do |form| 
+%>
+	<%= form.hidden_field :topic_ids, data: {bulk_actions_target: 'selectedIdsField'} %>
+	<%= form.submit value:status.titleize, class:"bulk-actions__button bulk-actions__button--"+status.dasherize %>
+<% end %>
