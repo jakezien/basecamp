@@ -64,6 +64,6 @@ class TopicsController < ApplicationController
 
     # Only allow a list of trusted parameters through.
     def topic_params
-      params.require(:topic).permit(:status, :is_selected)
+      params.require(:topic).permit(:status)
     end
 end

@@ -14,7 +14,6 @@ class TopicsTest < ApplicationSystemTestCase
     visit topics_url
     click_on "New Topic"
 
-    check "Is selected" if @topic.is_selected
     fill_in "Status", with: @topic.status
     click_on "Create Topic"
 
@@ -26,7 +25,6 @@ class TopicsTest < ApplicationSystemTestCase
     visit topics_url
     click_on "Edit", match: :first
 
-    check "Is selected" if @topic.is_selected
     fill_in "Status", with: @topic.status
     click_on "Update Topic"
 

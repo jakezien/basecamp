@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2021_06_24_025757) do
+ActiveRecord::Schema.define(version: 2021_06_25_033908) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -48,11 +48,10 @@ ActiveRecord::Schema.define(version: 2021_06_24_025757) do
 
   create_table "topics", force: :cascade do |t|
     t.string "status"
-    t.boolean "is_selected"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
-    t.bigint "message_id", null: true
-    t.bigint "sticky_id", null: true
+    t.bigint "message_id"
+    t.bigint "sticky_id"
     t.index ["message_id"], name: "index_topics_on_message_id"
     t.index ["sticky_id"], name: "index_topics_on_sticky_id"
   end

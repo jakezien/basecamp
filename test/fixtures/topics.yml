@@ -2,8 +2,6 @@
 
 one:
   status: MyString
-  is_selected: false
 
 two:
   status: MyString
-  is_selected: false
