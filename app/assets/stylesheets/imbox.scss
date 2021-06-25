@@ -1,11 +1,18 @@
-.imbox__footer {
-	position: fixed;
-	bottom: 0;
-	left: 0;
-	right: 0;
-	width: 100%;
-	max-width: var(--content-width);
-	margin: 0 auto;
-	height: 90px;
-	background: red;
+.imbox {
+	&__footer {
+		position: fixed;
+		bottom: 0;
+		left: 0;
+		right: 0;
+		width: 100%;
+		max-width: var(--content-width);
+		margin: 0 auto;
+		height: 90px;
+		background: red;		
+	}
+
+
+	&.bulk-selection--active {
+		background:red;
+	}
 }
