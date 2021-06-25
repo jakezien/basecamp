@@ -20,7 +20,10 @@
       </p>
     </div>
     <time class="message-preview__time">
-      <%= topic.messages.last.time_received.strftime("%l:%M%P") %>
+      <%= 
+        time = topic.messages.last.time_received
+        time.today? ? time.strftime("%l:%M%P") : time.strftime("%b %-d")
+       %>
     </time>
   </a>
 </article>

@@ -52,3 +52,235 @@ topics:
           many more.
       time_received: 'Jun 17 2021 16:32'
 
+  - &topic3
+    - &message0
+      sender: Jake Zien
+      subject: Thank you
+      body: |
+        Ravi,
+
+        Thank you so much for all your time, transparency, and enthusiasm as you shepherded me through the Disco interview process. Please extend my gratitude to the team as well; everyone was friendly, welcoming, and generous with their time and candor. 
+
+        I know this outcome isn't what we'd hoped for, but I'm glad that "there are no bridges burned," as you said. I so appreciated learning about this company, meeting an interesting bunch who work on tough problems, receiving the honor of an offer. Thanks for your enthusiasm for my work, and for your effort to create a solution to the weird moment in which I find myself, both at work and outside it.
+      time_received: '2021-06-21T18:46:19Z'
+
+  - &topic4
+    - &message0
+      sender: Laura Moreno
+      subject: JUST SOLD | Character-Filled 1920s Home in the Los Feliz Hills 🗝️
+      body: A huge congrats to my clients for the purchase of their incredible new home!
+      time_received: 'Mon, 21 Jun 2021 15:10:18'
+    - &message1
+      sender: Jake Zien
+      subject: JUST SOLD | Character-Filled 1920s Home in the Los Feliz Hills 🗝️
+      body: Congrats!! Too much house for Anna and me, but looks lovely for a bigger family. 
+      time_received: '2021-06-21T16:43:21Z'
+    - &message2
+      sender: Laura Moreno
+      subject: JUST SOLD | Character-Filled 1920s Home in the Los Feliz Hills 🗝️
+      body: Thank you! Yes my clients have a little boy and have plans for one or two more in the near future! :) 
+      time_received: '2021-06-22T05:36:09Z'
+
+  - &topic5
+    - &message0
+      sender: Russell Connor Ewing
+      subject: "Fwd: From Eugenia Furneaux: Burn This / Streaming Information"
+      body: |
+        My production of Burn This is available today through the 20th. The content and my character are very inflammatory- and can’t attest to the quality of the recording so I would probably be sparing in sharing it with folks. Enjoy!
+        Love,
+        Russell
+      time_received: '2021-06-17T16:15:32Z'
+    - &message1
+      sender: Lucy Margaret Ewing
+      subject: "Fwd: From Eugenia Furneaux: Burn This / Streaming Information"
+      body: |
+        Thank you so much, Russell. We can't wait to watch it, but will have to. We are in the Howard's kitchen right now.
+
+        Love and mega congrats!
+
+        Mom
+
+        p.s. Still missing all of you out here. 
+      time_received: '2021-06-17T16:23:18Z'
+
+  - &topic6
+    - &message0
+      sender: Bill Diss
+      subject: "Update on Grandma Young"
+      body: |
+        Dear Family,
+
+        As some of you know, Grandma Young (Cathy's Mom and my wonderful mother-in-law) passed away on Monday, June 14, 2021.  She was 87 years old.  Please pray for the repose of her soul and Grandma's entire family, that is two children, two spouses of children, five grandchildren, four spouses of grandchildren, and five great grandchildren.  Please pray for Cathy as she just had surgery this week.
+
+        I have included some of my favorite pictures of Grandma.
+
+        Lots of Love and Blessings to All,
+        Bill
+      time_received: '2021-06-17T01:04:28Z'
+
+  - &topic7
+    - &message0
+      sender: Don Zien
+      subject: "Fwd: BusinessWatch Delivered: It's cheaper to rent than buy a home with a mortgage in Milwaukee, LendingTree says"
+      body: |
+        Don Zien
+        Senior Vice President 
+        Colliers International-Wisconsin 
+        O- 414-278-6851
+        C- 414-559-6847
+      time_received: '2021-06-14T16:52:10Z'
+    - &message1
+      sender: Jake Zien
+      subject: "Fwd: BusinessWatch Delivered: It's cheaper to rent than buy a home with a mortgage in Milwaukee, LendingTree says"
+      body: Bubble makin’ everything go crazy
+      time_received: '2021-06-16T14:41:58Z'
+    - &message2
+      sender: Don Zien
+      subject: "Fwd: BusinessWatch Delivered: It's cheaper to rent than buy a home with a mortgage in Milwaukee, LendingTree says"
+      body: It is. There are also over 1000 apartments under construction metro wide.  900 in the downtown area with 3 high rises.
+      time_received: '2021-06-16T14:57:02Z'
+    - &message3
+      sender: Jake Zien
+      subject: "Fwd: BusinessWatch Delivered: It's cheaper to rent than buy a home with a mortgage in Milwaukee, LendingTree says"
+      body: Good thing they aren’t offices…
+      time_received: '2021-06-16T15:02:53Z'
+    - &message4
+      sender: Don Zien
+      subject: "Fwd: BusinessWatch Delivered: It's cheaper to rent than buy a home with a mortgage in Milwaukee, LendingTree says"
+      body: |
+        It is.  I don’t know who is going to rent all these apartments.  They won’t be cheap either.
+ 
+        I might come to NY.  How are you two holding up?  Water under the bridge? Ship has sailed? Can’t win em all?
+      time_received: '2021-06-16T15:07:00Z'
+
+  - &topic8
+    - &message0
+      sender: Roam Research
+      subject: "Inline Reference Counter, Jump-to-Date updates, and more!"
+      body: |
+        The Roaman Times
+        Block References Inline Counter
+        One of the features that make block references so awesome is the "Inline Counter" - the indicator on the right that shows you the number of times a block has been referenced elsewhere. This handy counter was available exclusively from the original block... until now. 
+      time_received: '2021-06-08T15:01:16Z'
+
+  - &topic9
+    - &message0
+      sender: Anna Ewing Zien
+      subject: "Fwd: Your United reservation for Fort Myers, FL, US (RSW) is processing"
+      body: |
+        ---------- Forwarded message ---------
+        From: United Airlines, Inc. <unitedairlines@united.com>
+        Date: Wed, Apr 28, 2021 at 6:41 PM
+        Subject: Your United reservation for Fort Myers, FL, US (RSW) is processing
+        To: <annacewing@gmail.com>
+
+        Add UnitedAirlines@news.united.com to your address book. See instructions.      
+      time_received: '2021-06-11T14:19:44Z'
+
+  - &topic10
+    - &message0
+      sender: Delta Air Lines
+      subject: "It's Time To Check In"
+      body: |
+        Hello, Jacob D
+        #9329036876
+        Confirmation # : GZE3LH
+
+
+        CHECK IN ONLINE ›
+        Your flight on Saturday, June 5 is available for check-in.
+        Confirm You're Healthy To Fly
+        When you check-in, we’ll ask you commit to wearing a mask throughout your trip – even if you are vaccinated – and acknowledge that you have not experienced symptoms, been exposed to or tested positive for COVID-19 in the past 10 days.     
+      time_received: '2021-06-04T14:12:00Z'
+
+  - &topic11
+    - &message0
+      sender: Amazon Trade-In
+      subject: "Your Trade-In shipping label is ready! Trade-In Order #TRN-6192588-2795558"
+      body: |
+        Your shipping instructions
+         
+         
+        Hi Jake, ship your $25.00 trade-in before the offer expires.
+
+        Ship by August 5, 2021 .
+         
+        GET FREE SHIPPING LABEL
+        Next steps
+          
+        PACK YOUR ITEMS
+        See packing guidelines
+      time_received: '2021-06-21T20:19:41Z'
+
+  - &topic12
+    - &message0
+      sender: Sam Bishop
+      subject: "Citizen Pruner NYC materials"
+      body: |
+        Hi Jake, 
+
+        Thanks for braving the weather report and rain today. Here is the link to the course materials: https://trees1-my.sharepoint.com/:f:/g/personal/sam_treesny_org/EhYCNiZHPt1Jo_QJ2lkO12IBrrpGFCvKG9NFJkyRDEXQpQ?e=ehoFCG
+
+        The password is: CitizenP
+
+        The exam is attached, please let me know if you have any questions. 
+
+        Sincerely,
+        Sam
+      time_received: '2021-06-15T21:49:31Z'
+
+
+  - &topic13
+    - &message0
+      sender: Craig Mod
+      subject: "⦿ Roden: 056 — Big Walk Energy, Story Demystified, Film Review"
+      body: |
+        Big Walk Energy, Story Demystified, Film Review
+        We walked a lot, now let's get to work
+        Rodenians —
+        
+        Wow. Hello. Hello from the other side of a 464 kilometer walk and everything else these past seven weeks. This is Roden, the usually monthly newsletter from me, Craig Mod, made free for all by the generous support of the 1,000+ paying members of SPECIAL PROJECTS.
+      time_received: '2021-06-23T13:48:12Z'
+
+  - &topic14
+    - &message0
+      sender: Park Avenue Armory
+      subject: 'Limited Rush Tickets Available for Robert Icke’s "Enemy of the People" Starring Ann Dowd'
+      body: |
+        Secure your tickets to experience Robert Icke's groundbreaking adaptation of Enemy of the People.  | View in browser
+
+
+        Limited Rush Tickets Now Available!
+
+        “Robert Icke is one of the most important forces in today’s theatre.”
+        —The Guardian
+
+        “Ann Dowd [is] formidable.”
+        —The New York Times
+      time_received: '2021-06-24T21:40:19Z'
+
+  - &topic15
+    - &message0
+      sender: Matt Levine
+      subject: 'Money Stuff: Fidelity Manager Lacked Diamond Hands'
+      body: |
+        Programming note: Money Stuff will be off tomorrow, back on Monday.
+
+        GameStop
+        Here is a Bloomberg article titled “A Longtime Fidelity Manager Sold GameStop, and Has Some Regrets.” It begins like this:
+
+        Joel Tillinghast has managed the Fidelity Low-Priced Stock Fund since it was created about 32 years ago, hunting for companies with shares that trade at bargain prices relative to their earnings potential. In 2020, a suffering video-game retailer called GameStop Corp. fit that bill.
+      time_received: '2021-06-24T16:02:48Z'
+
+  - &topic16
+    - &message0
+      sender: Julie Tynion
+      subject: 'Elizabeth Bennett’s internal monologue'
+      body: |
+        Indulge me.  It’s hilarious. 
+        Xoxoxo
+
+        Elizabeth Bennet's internal dialogue
+
+        https://www.youtube.com/watch?v=Zz767NyTX30&ab_channel=CTippyCTippy
+      time_received: 'June 21, 2021 at 10:40am EDT'

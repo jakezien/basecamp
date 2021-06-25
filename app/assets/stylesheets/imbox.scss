@@ -1,3 +1,11 @@
-// Place all the styles related to the Imbox controller here.
-// They will automatically be included in application.css.
-// You can use Sass (SCSS) here: https://sass-lang.com/
+.imbox__footer {
+	position: fixed;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	width: 100%;
+	max-width: var(--content-width);
+	margin: 0 auto;
+	height: 90px;
+	background: red;
+}

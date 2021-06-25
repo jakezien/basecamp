@@ -1,10 +1,17 @@
 
 <div class="sheet">
-  <header>
+  <header class="align--center">
     <h1>Imbox</h1>
   </header>
 
   <div class="imbox">
-    <%= render partial: 'messages/message_preview', collection: @topics,  as: 'topic' %>
+    <%= render partial: 'messages/message_preview', 
+      collection: @topics.sort {|a, b| b.messages.last[:time_received] <=> a.messages.last[:time_received]},  
+      as: 'topic' %>
   </div>
+
+  <footer class="imbox__footer">
+
+    
+  </footer>
 </div>
