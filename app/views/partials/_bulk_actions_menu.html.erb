@@ -1,4 +1,14 @@
-<menu class="bulk-actions__menu popup-menu" data-bulk-actions-target="menu">
+<menu 
+	class="bulk-actions__menu popup-menu" 
+	data-bulk-actions-target="menu" 
+	data-controller="set-aside-flyout"
+>
 	<%= render "partials/bulk_action_button", status:'unseen' %>
 	<%= render "partials/bulk_action_button", status:'set_aside' %>
+	
+	<button class="bulk-actions__item bulk-actions__button" data-action="set-aside-flyout#toggle">
+		⌄
+	</button>
+
+	<%= render "partials/set_aside_flyout" %>
 </menu>

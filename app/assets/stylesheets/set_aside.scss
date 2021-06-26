@@ -1,3 +1,10 @@
-// Place all the styles related to the SetAside controller here.
-// They will automatically be included in application.css.
-// You can use Sass (SCSS) here: https://sass-lang.com/
+.set-aside {
+
+	&__section {
+		margin-bottom: 6rem;
+		&:not(:first-of-type) {
+			border-top: 2px solid rgba(var(--rgb-neutral-light-gray), 1);
+		}
+	}
+
+}

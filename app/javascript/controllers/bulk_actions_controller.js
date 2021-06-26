@@ -34,7 +34,6 @@ export default class extends Controller {
 
   selectedIdsValueChanged(newString) {
     this.selectedIdsFieldTargets.forEach((field) => field.value = newString)
-    // console.log('selectedIds:', this.selectedIdsFieldTarget.value)
   }
 
   addClassesAndAttrs() {

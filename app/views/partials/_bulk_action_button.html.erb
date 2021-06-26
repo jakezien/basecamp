@@ -5,5 +5,6 @@
 	class:"bulk-actions__item") do |form| 
 %>
 	<%= form.hidden_field :topic_ids, data: {bulk_actions_target: 'selectedIdsField'} %>
-	<%= form.submit value:status.titleize, class:"bulk-actions__button bulk-actions__button--"+status.dasherize %>
+	<% labelText = status.split('--').last.titleize %>
+	<%= form.submit value:labelText, class:"bulk-actions__button bulk-actions__button--"+status.dasherize %>
 <% end %>

@@ -8,9 +8,39 @@
     data-controller="bulk-actions" 
     data-bulk-actions-selected-class="bulk-selection--active"
   >
-    <%= render partial: 'messages/message_preview', 
-      collection: @topics,  
-      as: 'topic' %>
+    <section class="set-aside__section set-aside__section--top">
+      <%= render partial: 'messages/message_preview', 
+        collection: @topics["set_aside"],  
+        as: 'topic' %>
+    </section>
+
+    <section class="set-aside__section set-aside__section--now">
+      <h2 class="align--center">Now</h2>
+      <%= render partial: 'messages/message_preview', 
+        collection: @topics["set_aside--now"],  
+        as: 'topic' %>
+    </section>
+
+    <section class="set-aside__section set-aside__section--soon">
+      <h2 class="align--center">Soon</h2>
+      <%= render partial: 'messages/message_preview', 
+        collection: @topics["set_aside--soon"],  
+        as: 'topic' %>
+    </section>
+
+    <section class="set-aside__section set-aside__section--later">
+      <h2 class="align--center">Later</h2>
+      <%= render partial: 'messages/message_preview', 
+        collection: @topics["set_aside--later"],  
+        as: 'topic' %>
+    </section>
+
+    <section class="set-aside__section set-aside__section--whenever">
+      <h2 class="align--center">Whenever</h2>
+      <%= render partial: 'messages/message_preview', 
+        collection: @topics["set_aside--whenever"],  
+        as: 'topic' %>
+    </section>
 
     <%= render partial: 'partials/bulk_actions_menu' %>
   </div>
