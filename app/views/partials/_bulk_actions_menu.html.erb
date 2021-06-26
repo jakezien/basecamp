@@ -4,11 +4,16 @@
 	data-controller="set-aside-flyout"
 >
 	<%= render "partials/bulk_action_button", status:'unseen' %>
-	<%= render "partials/bulk_action_button", status:'set_aside' %>
+	<%= render "partials/bulk_action_button", status:'set_aside', custom_class:'segmented-button__left' %>
 	
-	<button class="bulk-actions__item bulk-actions__button" data-action="set-aside-flyout#toggle">
-		⌄
-	</button>
-
-	<%= render "partials/set_aside_flyout" %>
+	<div class="flyout__container">
+		<button 
+			class="bulk-actions__item bulk-actions__button segmented-button__right flyout__trigger" 
+			data-action="set-aside-flyout#toggle"
+		>
+			⌄
+		</button>
+		<%= render "partials/set_aside_flyout" %>
+	</div>
+	
 </menu>

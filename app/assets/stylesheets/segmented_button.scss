@@ -1,0 +1,15 @@
+.segmented-button {
+	&__left, &__left button, &__left input[type="submit"] {
+		border-top-right-radius: 0;
+		border-bottom-right-radius: 0;
+		margin-right: 2px
+	}
+
+	&__right, &__right button, &__right input[type="submit"] {
+		border-top-left-radius: 0;
+		border-bottom-left-radius: 0;
+		margin-left: 2px;
+	}
+
+}
+

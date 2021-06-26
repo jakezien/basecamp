@@ -1,4 +1,6 @@
-<article class="message-preview" data-bulk-actions-target="row">
+<article 
+  class="<%= 'message-preview ' + (local_assigns[:custom_class] ? custom_class : '') %>"
+  data-bulk-actions-target="row">
 
   <div class="message-preview__avatar avatar">
     <input type="checkbox" 

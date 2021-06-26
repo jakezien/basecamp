@@ -28,7 +28,7 @@ export default class extends Controller {
   }
 
   selectedCountValueChanged(newCount) {
-    this.selectedCountValue ? this.addClassesAndAttrs() : this.removeClassesAndAttrs()
+    this.selectedCountValue ? this.show() : this.hide()
     // console.log('selectedCountValue:', this.selectedCountValue)
   }
 
@@ -36,13 +36,14 @@ export default class extends Controller {
     this.selectedIdsFieldTargets.forEach((field) => field.value = newString)
   }
 
-  addClassesAndAttrs() {
+  show() {
     this.element.classList.add(this.selectedClass)
     this.menuTarget.setAttribute('open', '')
   }
 
-  removeClassesAndAttrs() {
+  hide() {
     this.element.classList.remove(this.selectedClass)
     this.menuTarget.removeAttribute('open')
+    this.menuTarget.querySelectorAll('[open]').forEach(e => e.removeAttribute('open'))
   }
 }

@@ -1,5 +1,5 @@
-<div class="sheet">
-  <header class="align--center">
+<div>
+  <header class="page__header">
     <h1>Set Aside</h1>
     <p>Everything you’ve marked as Set Aside.</p>
   </header>
@@ -9,9 +9,11 @@
     data-bulk-actions-selected-class="bulk-selection--active"
   >
     <section class="set-aside__section set-aside__section--top">
-      <%= render partial: 'messages/message_preview', 
-        collection: @topics["set_aside"],  
-        as: 'topic' %>
+      <div class="card-container">
+        <%= render partial: 'messages/message_preview', 
+          collection: @topics["set_aside"],  
+          as: 'topic' %>
+      </div>
     </section>
 
     <% statuses = ['set_aside--now', 'set_aside--soon', 'set_aside--later', 'set_aside--whenever'] %>
@@ -21,6 +23,5 @@
 
     <%= render partial: 'partials/bulk_actions_menu' %>
   </div>
-
 
 </div>

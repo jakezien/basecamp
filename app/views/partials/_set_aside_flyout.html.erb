@@ -1,6 +1,6 @@
-<menu class="set-aside__flyout popup-menu" data-set-aside-flyout-target="flyout">
-	<%= render "partials/bulk_action_button", status:'set_aside--now' %>
-	<%= render "partials/bulk_action_button", status:'set_aside--soon' %>
-	<%= render "partials/bulk_action_button", status:'set_aside--later' %>
-	<%= render "partials/bulk_action_button", status:'set_aside--whenever' %>
+<menu class="set-aside__flyout flyout__menu popup-menu" data-set-aside-flyout-target="flyout">
+	<%= render "partials/bulk_action_button", status:'set_aside--now', label_prefix:'For '%>
+	<%= render "partials/bulk_action_button", status:'set_aside--soon', label_prefix:'For '%>
+	<%= render "partials/bulk_action_button", status:'set_aside--later', label_prefix:'For '%>
+	<%= render "partials/bulk_action_button", status:'set_aside--whenever', label_prefix:'For '%>
 </menu>

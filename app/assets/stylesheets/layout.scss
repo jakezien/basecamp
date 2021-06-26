@@ -9,5 +9,17 @@
 		margin: 0 auto;
 		display: flex;
 	}
+
+	&__header {
+		text-align: center;
+		margin-bottom: 3rem;
+		h1 {
+			margin: 0;
+		}
+		p {
+			margin-top: 0;
+		}
+	}
+
 }
 
