@@ -4,10 +4,11 @@
 	grid-template-columns: repeat(auto-fill, minmax(26rem, 1fr));
 	grid-gap: 1em;
 
-	> article {
+	> .card {
 		flex: 0 0 30%;
 		box-shadow: 0 0 3rem var(--color-shadow);
 		border-radius: 1rem;
+		padding: 1.5em;
 	}
 }
 

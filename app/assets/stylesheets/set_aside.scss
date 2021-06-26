@@ -1,10 +1,40 @@
 .set-aside {
+	width: 100%;
 
 	&__section {
 		margin-bottom: 6rem;
-		&:not(:first-of-type) {
-			border-top: 2px solid rgba(var(--rgb-neutral-light-gray), 1);
+
+		h1 {
+			font-size: 2em;
 		}
 	}
 
+}
+
+.set-aside__heading, .bulk-actions__item--set-aside {
+
+	$statuses: 'now', 'soon', 'later', 'whenever';
+
+	@each $status in $statuses {
+		&--#{$status}::before {
+			content: '';
+			position: absolute;
+			top: 50%;
+			left: .5em;
+			transform: translateY(-50%);
+			display: inline-block;
+			margin-right: .25em;
+			vertical-align: bottom;
+			width: 1em;
+			height: 1em;
+			background-image: url(asset-path('#{$status}.svg'));
+		}
+	}
+
+}
+
+.bulk-actions__item::before {
+	width: 1.33em;
+	height: 1.33em;
+	filter: invert(100%);
 }

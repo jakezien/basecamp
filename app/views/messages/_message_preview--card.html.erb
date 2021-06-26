@@ -1,0 +1,37 @@
+<article 
+  class="<%= 'message-preview card ' + (local_assigns[:custom_class] ? custom_class : '') %>"
+  data-bulk-actions-target="row">
+
+  <div class="message-preview__content">
+    <h3 class="message-preview__subject flush">
+       <%= topic.messages.last.subject %>
+    </h3>
+
+    <div class="flex push_quarter--top">
+      <div class="message-preview__avatar avatar">
+        <input type="checkbox" 
+          data-bulk-actions-target="checkbox"
+          data-action="bulk-actions#update"
+          data-topic-id="<%= topic.id %>"
+        />
+      </div>
+      <div>
+        <p class="message-preview__sender flush">
+          <%= topic.messages.last.sender %>
+        </p>
+        <time class="message-preview__time">
+          <%= 
+            time = topic.messages.last.time_received
+            time.today? ? time.strftime("%l:%M%P") : time.strftime("%b %-d")
+           %>
+        </time>
+      </div>
+    </div>
+
+    <p class="message-preview__body push_quarter--top">
+      <%= topic.messages.last.body %>
+    </p>
+  </div>
+
+  <a class="message-preview__link" href="<%= topic_path(topic) %>"></a>
+</article>

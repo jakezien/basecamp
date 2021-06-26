@@ -1,16 +1,16 @@
-<div>
+<div class="set-aside">
   <header class="page__header">
     <h1>Set Aside</h1>
     <p>Everything you’ve marked as Set Aside.</p>
   </header>
 
-  <div class="set-aside"
+  <div
     data-controller="bulk-actions" 
     data-bulk-actions-selected-class="bulk-selection--active"
   >
     <section class="set-aside__section set-aside__section--top">
       <div class="card-container">
-        <%= render partial: 'messages/message_preview', 
+        <%= render partial: 'messages/message_preview--card', 
           collection: @topics["set_aside"],  
           as: 'topic' %>
       </div>

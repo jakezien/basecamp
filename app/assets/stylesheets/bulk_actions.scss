@@ -11,6 +11,10 @@
 	&__item {
 		min-width: 10rem;
 		margin: 0.4rem;
+		position: relative;
+		::before {
+			filter: invert(100%)
+		}
 	}
 
 	&__button {

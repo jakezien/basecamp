@@ -2,7 +2,7 @@
 	url: '/topics/bulk_update?status=' + status, 
 	method: "patch", 
 	data: {action: 'bulk_actions#reset'},
-	class:"bulk-actions__item " + (local_assigns[:custom_class] ? custom_class : '')) do |form| 
+	class:"bulk-actions__item bulk-actions__item--" + status.dasherize + ' ' + (local_assigns[:custom_class] ? custom_class : '')) do |form| 
 %>
 	<%= form.hidden_field :topic_ids, data: {bulk_actions_target: 'selectedIdsField'} %>
 	<% labelText = (local_assigns[:label_prefix] ? label_prefix : '') + status.split('--').last.titleize %>
