@@ -51,4 +51,10 @@
 			-webkit-line-clamp: 2;
 		}
 	}
+
+	.add-sticky {
+		position: absolute;
+		bottom: var(--base-space);
+		right: var(--base-space);
+	}
 }

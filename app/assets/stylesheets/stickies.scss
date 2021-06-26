@@ -1,0 +1,12 @@
+.add-sticky {
+	position: relative;
+	width: 4rem;
+	height: 4rem;
+	border: 0;
+	background-color: rgba(var(--rgb-yellow), 0.2);;
+	border-radius: 0.5rem;
+
+	svg * {
+		fill: var(--color-yellow);
+	}
+}
