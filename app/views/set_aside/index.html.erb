@@ -14,33 +14,10 @@
         as: 'topic' %>
     </section>
 
-    <section class="set-aside__section set-aside__section--now">
-      <h2 class="align--center">Now</h2>
-      <%= render partial: 'messages/message_preview', 
-        collection: @topics["set_aside--now"],  
-        as: 'topic' %>
-    </section>
-
-    <section class="set-aside__section set-aside__section--soon">
-      <h2 class="align--center">Soon</h2>
-      <%= render partial: 'messages/message_preview', 
-        collection: @topics["set_aside--soon"],  
-        as: 'topic' %>
-    </section>
-
-    <section class="set-aside__section set-aside__section--later">
-      <h2 class="align--center">Later</h2>
-      <%= render partial: 'messages/message_preview', 
-        collection: @topics["set_aside--later"],  
-        as: 'topic' %>
-    </section>
-
-    <section class="set-aside__section set-aside__section--whenever">
-      <h2 class="align--center">Whenever</h2>
-      <%= render partial: 'messages/message_preview', 
-        collection: @topics["set_aside--whenever"],  
-        as: 'topic' %>
-    </section>
+    <% statuses = ['set_aside--now', 'set_aside--soon', 'set_aside--later', 'set_aside--whenever'] %>
+    <% statuses.each do |status| %>
+       <%= render partial:'set_aside_section', locals: {status:status} %>
+    <% end %>
 
     <%= render partial: 'partials/bulk_actions_menu' %>
   </div>

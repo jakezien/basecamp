@@ -1,0 +1,10 @@
+<% status_name = status.split('--').last %>
+<section 
+	id= <%="set-aside__section--" + status_name %>,
+	class= <%= "set-aside__section set-aside__section--" + status_name %>
+>
+  <h2 class="align--center"><%= 'For ' + status_name.titleize %></h2>
+  <%= render partial: 'messages/message_preview', 
+    collection: @topics[status],  
+    as: 'topic' %>
+</section>
