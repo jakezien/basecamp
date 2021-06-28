@@ -1,0 +1,30 @@
+<article 
+  class="<%= 'message-preview card card--mini ' + (local_assigns[:custom_class] ? custom_class : '') %>">
+  <div class="icon"></div>
+
+  <div class="message-preview__content">
+
+
+    <div class="flex push_quarter--top">
+      <div class="message-preview__avatar avatar">
+        <input type="checkbox" 
+          data-bulk-actions-target="checkbox"
+          data-action="bulk-actions#update"
+          data-topic-id="<%= topic.id %>"
+        />
+      </div>
+      <div>
+        <p class="message-preview__subject flush">
+          <strong>
+           <%= topic.messages.last.subject %>
+         </strong>
+        </p>
+        <p class="message-preview__sender flush">
+          <%= topic.messages.last.sender %>
+        </p>
+      </div>
+    </div>
+  </div>
+
+  <a class="message-preview__link" href="<%= topic_path(topic) %>"></a>
+</article>

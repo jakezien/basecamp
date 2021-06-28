@@ -1,11 +1,11 @@
 .bulk-actions{
 	&__menu {
 		position: fixed;
-		width: var(--content-width);
+		max-width: var(--content-width);
 		margin: 0 auto;
 		top: var(--sheet-padding);
-		left: 0;
-		right: 0;
+		left: 50%;
+		transform: translateX(-50%);
 	}
 
 	&__item {

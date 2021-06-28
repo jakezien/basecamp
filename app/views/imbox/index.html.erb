@@ -13,6 +13,11 @@
   </div>
 
   <footer class="imbox__footer">
-    <%= link_to "Set Aside", "/set_aside" %>
+    <div class="imbox__tray imbox__tray--reply-later"></div>
+    <div class="imbox__tray imbox__tray--set-aside">
+      <%= render partial: 'messages/message_preview--card--mini', collection: @set_aside, as: 'topic' %>
+
+      <%= link_to "", "/set_aside", class: 'imbox__tray-link imbox__tray-link--set-aside' %>
+    </div>
   </footer>
 </div>

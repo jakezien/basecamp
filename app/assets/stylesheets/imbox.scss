@@ -1,18 +1,63 @@
 .imbox {
 	&__footer {
 		position: fixed;
+		display: flex;
+		justify-content: center;
 		bottom: 0;
 		left: 0;
 		right: 0;
-		width: 100%;
+		width: calc(100% - 2 * var(--page-padding));
 		max-width: var(--content-width);
 		margin: 0 auto;
-		height: 90px;
-		background: red;		
+		padding: 1rem var(--page-padding);
+		background: rgba(var(--rgb-light-gray), 1);
+	}
+
+	&__tray {
+		max-width: 30rem;
+		height: 8rem;
+		margin: 0 1em;
+		flex: 0 1 30rem;
+		position: relative;
+
+		&--reply-later {
+			background-image: url(asset-path('fake-reply-later.png'));
+			background-size: auto 100%;
+			background-position: center left;
+		}
+
+		@for $i from 1 through 7 {
+			.card--mini:nth-child(#{$i}) {
+				position: absolute;
+				z-index: calc(8 - #{$i});
+
+				transform: translateY( calc(-.5em * (#{$i} - 1) ) );
+				// transform: scale( calc(#{math.pow(0.95, $i)})) translateY( calc(-1em * #{$i}) );
+			}
+		}
+	}
+
+	&__tray-link {
+		position: absolute;
+		display: block;
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: 100%;
+		cursor: pointer;
+		z-index: 8;
 	}
 
 
 	&.bulk-selection--active {
 		
+	}
+}
+
+@media (max-width: 40em) {
+	.imbox {
+		&__footer {
+			width: 100%;
+		}
 	}
 }

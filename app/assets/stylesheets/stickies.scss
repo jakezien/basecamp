@@ -5,8 +5,13 @@
 	border: 0;
 	background-color: rgba(var(--rgb-yellow), 0.2);;
 	border-radius: 0.5rem;
+	cursor: pointer;
 
 	svg * {
 		fill: var(--color-yellow);
+	}
+
+	&:hover {
+		background-color: rgba(var(--rgb-yellow), 0.4);;
 	}
 }

@@ -11,6 +11,11 @@
 		flex: 0 0 auto
 	}
 
+	&__checkbox {
+		width: 3em;
+		height: 3em;
+	}
+
 	&__link {
 		display: flex;
 		width: 100%;
@@ -50,11 +55,17 @@
 		.message-preview__subject {
 			-webkit-line-clamp: 2;
 		}
+
+		&--mini {
+			.message-preview__subject {
+				-webkit-line-clamp: 1;
+			}			
+		}
 	}
 
 	.add-sticky {
 		position: absolute;
 		bottom: var(--base-space);
-		right: var(--base-space);
+		left: var(--base-space);
 	}
 }
