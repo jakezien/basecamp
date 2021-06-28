@@ -20,11 +20,11 @@
 			margin-top: 0;
 		}
 	}
-
 }
 
 .divider {
 	position: relative;
+	text-align: center;
 
 	span {
 		position: relative;
@@ -49,5 +49,11 @@
 	  span {
 			padding-left: 2em;
 		}
+	}
+}
+
+@media (max-width: 40em) {
+	.page__header, .divider {
+		text-align: left;
 	}
 }

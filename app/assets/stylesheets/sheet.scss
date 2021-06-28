@@ -6,3 +6,10 @@
 	border-radius: 1.5em;
 	box-shadow: 0 0 3rem var(--color-shadow);
 }
+
+@media (max-width: 40em) {
+	.sheet {
+		padding: 0;
+		box-shadow: none;
+	}
+}

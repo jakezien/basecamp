@@ -12,3 +12,13 @@
 	}
 }
 
+@media (max-width: 40em) {
+	.card-container {
+		grid-auto-rows: 20rem;
+		grid-gap: .5em;
+
+		> .card {
+			margin: 0.25em 0;
+		}
+	}
+}

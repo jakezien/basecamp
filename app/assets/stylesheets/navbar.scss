@@ -32,4 +32,30 @@
 		width: 3.5rem;
 		height: 3.5rem;
 	}
+
+	&__search, &__back {
+		padding: 0.5em 1em;
+		border-radius: 3em;
+	}
+
+	&__search {
+		background-color: rgba(var(--rgb-neutral-light-gray), 1);
+	}
+
+	&__back {
+		background-color: var(--color-primary);
+		text-decoration: none;
+		color: var(--color-text);
+		font-weight: 500;
+		display: none;
+	}
+
+	&--show-back {
+		.navbar__search {
+			display: none;
+		}
+		.navbar__back {
+			display: block;
+		}
+	}
 }
