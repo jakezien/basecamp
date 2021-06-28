@@ -20,6 +20,11 @@
 		flex: 0 1 30rem;
 		position: relative;
 
+		> p {
+			text-align: center;
+			color: rgba(var(--rgb-gray), 1)
+		}
+
 		&--reply-later {
 			background-image: url(asset-path('fake-reply-later.png'));
 			background-size: auto 100%;
