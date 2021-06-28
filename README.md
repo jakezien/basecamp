@@ -1,4 +1,5 @@
-![https://avatars.githubusercontent.com/u/1486983?s=120&v=4](JZ)
+![JZ](https://avatars.githubusercontent.com/u/1486983?s=120&v=4)
+
 
 # Hey Basecamp!
 
