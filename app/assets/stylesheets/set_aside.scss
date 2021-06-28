@@ -9,6 +9,18 @@
 		}
 	}
 
+	.filter-button {
+		color: var(--color-tertiary);
+		background: transparent;
+		border: 3px solid var(--color-tertiary);
+		cursor: pointer;
+
+		&:hover {
+			background: var(--color-tertiary);
+			color: var(--color-text--reversed);
+		}
+	}
+
 }
 
 .set-aside__heading, .bulk-actions__item--set-aside {

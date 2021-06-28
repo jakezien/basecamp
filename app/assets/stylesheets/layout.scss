@@ -13,11 +13,24 @@
 	&__header {
 		text-align: center;
 		margin-bottom: 3rem;
+		position: relative;
+		
 		h1 {
 			margin: 0;
 		}
+		
 		p {
 			margin-top: 0;
+		}
+
+		button {
+			padding: 0.5em 1em;
+			border-radius: 3em;
+			position: absolute;
+			font-size: var(--font-size-medium);
+			font-weight: 500;
+			top: var(--half-space);
+			right: var(--base-space);
 		}
 	}
 }
