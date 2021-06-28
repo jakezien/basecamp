@@ -1,24 +1,17 @@
-# README
+![JZ](https://avatars.githubusercontent.com/u/1486983?s=120&v=4)
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
 
-Things you may want to cover:
+# Hey Basecamp!
 
-* Ruby version
+Thanks so much for the opportunity to tackle a design challenge on one of my [favorite things.](https://beta.jakezien.com/favorites)
 
-* System dependencies
+This week has been a blast, and I've learned a ton. Hope you enjoy reading this code as much as I did writing it.
 
-* Configuration
+Fun fact: I'd never written a line of Ruby before last week, but Rails and Stimulus made throwing this together no problem. I found them to be as sensible as they are opinionated, a pattern I'm noticing with all things Basecamp.
 
-* Database creation
+[My writeup is here](https://beta.jakezien.com/basecamp), and you can play with the app at https://jz-basecamp.herokuapp.com. 
 
-* Database initialization
+So looking forward to talking through this with you. And whatever happens, thanks for a great mental workout and a truly enjoyable project.
 
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+Gratefully,
+Jake
