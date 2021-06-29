@@ -29,7 +29,7 @@
 		text-overflow: ellipsis;
 	}
 
-	&__subject, &__summary, &__sender {
+	&__subject, &__summary {
 		max-width: 95%;
 		overflow: hidden;
 		text-overflow: ellipsis;
@@ -58,7 +58,9 @@
 
 		&--mini {
 			.message-preview__subject, .message-preview__sender {
+				display: -webkit-box;
 				-webkit-line-clamp: 1;
+				-webkit-box-orient: vertical;
 			}			
 		}
 	}
