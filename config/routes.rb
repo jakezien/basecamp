@@ -6,7 +6,7 @@ Rails.application.routes.draw do
   root 'imbox#index'
 
   get "/set_aside", to: "set_aside#index"
-  post "/topics/bulk_update", to: "topics#bulk_update"
+  patch "/bulk_update", to: "topics#bulk_update"
 
   # For details on the DSL available within this file, see https://guides.rubyonrails.org/routing.html
 end

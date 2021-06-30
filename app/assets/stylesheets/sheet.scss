@@ -2,9 +2,10 @@
 	position: relative;
 	width: 100%;
 	padding: var(--sheet-padding);
-	margin: 0 auto 2em;
+	margin: 0 auto 200px;
 	border-radius: 1.5em;
 	box-shadow: 0 0 3rem var(--color-shadow);
+	min-height: calc(100vh - (var(--sheet-padding) + 100px));
 }
 
 @media (max-width: 40em) {

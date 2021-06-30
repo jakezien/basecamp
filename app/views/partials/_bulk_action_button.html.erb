@@ -1,5 +1,5 @@
 <%= form_with(
-	url: '/topics/bulk_update?status=' + status, 
+	url: '/bulk_update?status=' + status, 
 	method: "patch", 
 	data: {action: 'bulk_actions#reset'},
 	class:"bulk-actions__item bulk-actions__item--" + status.dasherize + ' ' + (local_assigns[:custom_class] ? custom_class : '')) do |form| 
