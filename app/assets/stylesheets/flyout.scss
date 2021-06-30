@@ -12,6 +12,7 @@
 .flyout__menu {
 	position: absolute;
 	flex-direction: column;
+	right: 0;
 
 	.bulk-actions{
 		&__item {
