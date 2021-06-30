@@ -1,0 +1,9 @@
+<div 
+	class="popup-menu flyout__container" 
+	data-controller="labels-flyout"
+>
+	<button>
+	<menu class="labels__flyout flyout__menu popup-menu" data-labels-flyout-target="flyout">
+		<%= render partial:"labels/label_button", collection:Label.all, as :label %>
+	</menu>
+</div>

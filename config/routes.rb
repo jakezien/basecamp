@@ -1,6 +1,8 @@
 Rails.application.routes.draw do
   resources :messages
-  # resources :topics
+  resources :topics
+  resources :stickies
+
   root 'imbox#index'
 
   get "/set_aside", to: "set_aside#index"

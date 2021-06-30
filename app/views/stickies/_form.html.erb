@@ -1,0 +1,56 @@
+<div class="sticky__container" data-controller="stickies">
+	
+	<div data-stickies-target="closed-ui">
+		<% if topic.sticky.nil? %>
+			<button class="button button--icon" aria-label="Add a sticky note" data-action="stickies#toggle">
+			  <%= inline_svg_tag("note.svg") %>
+			</button> 
+		<% else %>
+			<div class="sticky__content">
+				<p class="flush"><%= topic.sticky.body %></p>
+				<button class="button button--icon" aria-label="Edit this sticky note" data-action="stickies#toggle">
+				  <%= inline_svg_tag("note-edit.svg") %>
+				</button>
+			</div>
+		<% end %>
+	</div>
+
+	<div data-stickies-target="open-ui">
+		<%= form_with model: topic, 
+			url: topic_path(topic), 
+			method: 'patch', 
+			class:"sticky__form" do |form| 
+		%>
+			<% new_sticky = topic.sticky.nil? ? Sticky.new : topic.sticky %>
+			<%= form.fields_for :sticky, new_sticky do |sticky_form| %>
+			  <%= sticky_form.text_field :body, 
+			  	value: new_sticky.body,
+			  	data: {stickies_target: "textField"}
+			  %>
+		  <% end %>
+
+		  <div class="sticky__form-buttons push_half--top">
+
+			  <%= form.submit value:"Save", class:"button button--pill  button--tertiary" %>
+			  
+			  <button type="button" 
+			  	class="button button--pill button--outlined" 
+			  	data-action="stickies#reset"
+			  	style="color:var(--color-tertiary)" 
+		  	>
+			  	Cancel
+			  </button>
+
+<!-- 			  <button
+			  	class="button button--icon" 
+			  	data-action="stickies#checkDestroy"
+		  	>
+				  <%= inline_svg_tag("trash.svg") %>
+			  </button> -->
+			</div>
+		<% end %>
+		
+
+	</div>
+
+</div>

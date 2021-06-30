@@ -68,5 +68,8 @@
 @media (max-width: 40em) {
 	.page__header, .divider {
 		text-align: left;
+		p {
+			max-width: 70%;
+		}
 	}
 }

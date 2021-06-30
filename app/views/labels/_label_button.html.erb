@@ -1,0 +1,10 @@
+<%= form_with(
+	url: '/topics/bulk_update?label=' + label.name, 
+	method: "patch", 
+	data: {action: 'bulk_actions#reset'},
+	class:"bulk-actions__item bulk-actions__item--" + label.name.dasherize + ' ' + (local_assigns[:custom_class] ? custom_class : '')) do |form| 
+%>
+	<div class="icon icon--label"></div>
+	<% labelText = label.name.titleize %>
+	<%= form.submit value:labelText, class:"bulk-actions__button bulk-actions__button--"+label.name.dasherize %>
+<% end %>

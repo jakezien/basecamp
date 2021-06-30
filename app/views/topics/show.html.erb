@@ -5,5 +5,11 @@
   <%= @topic.status %>
 </p>
 
+
+<p>
+  <strong>Sticky:</strong>
+  <%= @topic.sticky %>
+</p>
+
 <%= link_to 'Edit', edit_topic_path(@topic) %> |
 <%= link_to 'Back', topics_path %>

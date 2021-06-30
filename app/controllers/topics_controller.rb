@@ -48,12 +48,13 @@ class TopicsController < ApplicationController
   def update
     respond_to do |format|
       if @topic.update(topic_params)
-        format.html { redirect_to @topic, notice: "Topic was successfully updated." }
+        format.html { }
         format.json { render :show, status: :ok, location: @topic }
       else
         format.html { render :edit, status: :unprocessable_entity }
         format.json { render json: @topic.errors, status: :unprocessable_entity }
       end
+      redirect_to request.referer
     end
   end
 
@@ -74,6 +75,6 @@ class TopicsController < ApplicationController
 
     # Only allow a list of trusted parameters through.
     def topic_params
-      params.require(:topic).permit(:status)
+      params.require(:topic).permit(:status, sticky_attributes: [:body])
     end
 end

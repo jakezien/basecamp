@@ -1,17 +1,77 @@
-.add-sticky {
-	position: relative;
-	width: 4rem;
-	height: 4rem;
-	border: 0;
-	background-color: rgb(255, 247, 206);
-	border-radius: 0.5rem;
-	cursor: pointer;
+.sticky {
 
-	svg * {
-		fill: var(--color-yellow);
+	&__container {
+		position: absolute;
+		display: block;
+		bottom: calc(-1 * var(--base-space));
+		left: var(--half-space);
+		max-width: calc(100% - var(--base-space));
+		background-color: rgb(255, 247, 206);
+		z-index: 2;
+		border-radius: .25rem;
+		box-shadow: 0 0px 4px var(--color-shadow);
+
+		.button--icon {
+			position: relative;
+			background-color: transparent;
+
+			svg {
+				width: 20px;
+				height: 20px;
+				* {
+					fill: var(--color-yellow);
+				}
+			}
+
+			&:hover {
+				background-color: darken(rgb(255, 247, 206), 10%);
+			}		
+		}
+
+		[data-stickies-target="closed-ui"] {
+			display: flex;
+		}
+		[data-stickies-target="open-ui"] {
+			display: none;
+			padding: 0.5em;
+			width: 100%;
+		}	
+
+		&[open] {
+			width: 100%;
+
+			[data-stickies-target="closed-ui"] {
+				display: none;
+			}
+			[data-stickies-target="open-ui"] {
+				display: flex;
+			}	
+		}
 	}
 
-	&:hover {
-		background-color: darken(rgb(255, 247, 206), 10%);
+	&__content {
+		display: flex;
+		align-items: center;
+		padding: 0 .25em 0 .5em;
+		font-size: var(--font-size-small);	
+	}
+
+	&__form {
+		width: 100%;
+
+		input[type="text"] {
+			padding: 0.33em 0.125em;
+			border: 0;
+			margin: 0;
+			width: 100%;
+			background: transparent;
+			border-bottom: 3px dotted var(--color-bg--main);
+			border-radius: 0.25rem;
+			font-size: var(--font-size-small);
+			&:focus {
+				background: rgba( var(--rgb-yellow), .25);
+				outline: none;
+			}
+		}
 	}
 }

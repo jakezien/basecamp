@@ -6,6 +6,7 @@
   <h1 class="divider divider--with-icon">
     <span class=<%= "set-aside__heading--" + status_name %>><%= 'For ' + status_name.titleize %></span>
   </h1>
+  <%= (local_assigns[:status_description] ? '<p>' + status_description + '</p>' : '') %>
   <div class="card-container">
     <%= render partial: 'messages/message_preview--card', 
       collection: @topics[status],  
