@@ -29,6 +29,7 @@
 		font-weight: 500;
 		color: var(--color-text--reversed);
 		cursor: pointer;
+		-webkit-appearance: none;
 		
 		&:hover {
 			background: rgba(var(--rgb-black), 0.1);
